@@ -113,6 +113,28 @@ console.log(cars.length);
  * parameters value & multiplier console.log( value * multiplier)
  */
 
+ function plus(a, b) {
+    return a + b;
+}
+
+function min(a, b) {
+    return a - b;
+}
+
+function keer(a, b) {
+    return a * b;
+}
+
+function delen(a, b) {
+    return a / b;
+}
+
+console.log(plus(5,5));
+console.log(min(5,5));
+console.log(keer(5,5));
+console.log(delen(5,5));
+
+
 /**
  * Opdracht 7: Function & objects
  * Maak een functie die een firstName en lastName verwacht als parameter
