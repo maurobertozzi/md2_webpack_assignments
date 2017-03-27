@@ -229,12 +229,14 @@ String.prototype.replaceAll = function(search, replacement) {
 /**
  * Opdracht 16: Custom prototype method gebruiken
  * Maak een array met meerdere namen
- * Probeer vervolgens de random() functie (die hierboven staat) te gebruiken
+ * Probeer vervolgens de random() functie (die hierboven staat) te gebruikenz
  * Tip: je roept deze functie op dezelfde manier aan als bijvoorbeeld push() en
  * splice().
  * console.log() de naam die deze functie returned
  */
-
+var array = ["harry","kees","pietje"];
+var random = array.random();
+console.log(random);
 /**
  * Opdracht 17: Custom prototype method gebruiken
  * Maak een variabele waarin je een lange tekst opslaat
@@ -242,10 +244,12 @@ String.prototype.replaceAll = function(search, replacement) {
  * op alle plekken te vervangen voor een ander woord
  * console.log() deze gewijzigde tekst
  */
-
+var randomString = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+var newSting = randomString.replaceAll('i', 'kys');
+console.log(newSting);
 /**
  * Opdracht 18: Prototype based language
  * Geef antwoord op onderstaande vraag
  */
-console.log('Waarom heet JavaScript een prototype based language?', 'jouw antwoord');
+console.log('Waarom heet JavaScript een prototype based language?', 'elke functie heeft zijn eigen koppel functies');
 
