@@ -253,3 +253,51 @@ console.log(newSting);
  */
 console.log('Waarom heet JavaScript een prototype based language?', 'elke functie heeft zijn eigen koppel functies');
 
+/**
+ * Opdracht 19: Zelf een custom prototype method maken
+ * Soms wil je een array leeg kunnen gooien. Het zou dus wel handig zijn als
+ * je bij elke array een empty() functie kunt aanroepen.
+ * Zorg ervoor dat deze functie er is en laat met 3 arrays zien dat hij werkt
+ */
+
+ Array.prototype.empty = function() {
+ 	console.log(this.length);
+    this.splice(0,this.length);
+    return this;
+};
+
+var bla = ["hatty","harry","maggi"];
+var emptyBla = bla.empty();
+console.log(emptyBla);
+
+var blas = ["hatty","harry"];
+var emptyBlas = blas.empty();
+console.log(emptyBlas);
+
+var blaa = ["hatty","harry","maggi","kwik"];
+var emptyBlaa = blaa.empty();
+console.log(emptyBlaa);
+
+/**
+ * Opdracht 20: Monkey patching (?)
+ * Je begint nu in te zien hoe JS werkt. Probeer nu de splice() en push()
+ * functies van Arrays te overschrijven met een eigen functie.
+ * Maak 2 arrays aan en laat zien dat je code werkt
+ */
+
+  Array.prototype.every = function() {
+ 	alert(this);
+ 	return this;
+};
+ var fruit = ["banaan", "aardbei"];
+ var alertFruit = fruit.every();
+
+
+
+  Array.prototype.pop = function() {
+ 	alert("kipsateé");
+ 	return this;
+};
+
+var cop = ["pizza","kaas","pasta"];
+var popcop = cop.pop();
