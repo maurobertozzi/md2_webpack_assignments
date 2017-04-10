@@ -253,6 +253,7 @@ console.log(newSting);
  */
 console.log('Waarom heet JavaScript een prototype based language?', 'elke functie heeft zijn eigen koppel functies');
 
+
 /**
  * Opdracht 19: Zelf een custom prototype method maken
  * Soms wil je een array leeg kunnen gooien. Het zou dus wel handig zijn als
