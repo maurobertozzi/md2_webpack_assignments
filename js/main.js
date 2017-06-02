@@ -142,6 +142,14 @@ console.log(delen(5,5));
  * vervolgens returned de functie een object met daarin de firstname en
  * lastname opgeslagen roep deze functie aan en console.log() de waarde
  */
+ function person(firstName, lastName){
+ 	var newPerson = {firstName:firstName, lastName:lastName};
+
+ 	console.log(newPerson);
+ 	return newPerson;
+ }
+
+ person("mauro","bertozzi")
 
 /**
  * Opdracht 8: Functions, objects
