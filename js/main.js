@@ -1,3 +1,4 @@
+import harry from './les_6.js';
 
 /**
  * Uitleg van deze opdrachten:
@@ -31,23 +32,23 @@
  * string variabele met de naam 'teacherName' en als waarde 'Berend'
 >>>>>>> BerendWeij/master
  */
- 	var teacherName = "Berend";
- 	var mentor = "Rosmerta";
- 	var rdteacher = "ed";
- 	var bacteacher = "hugo";
- 	var javateacher = "joey";
+    var teacherName = "Berend";
+    var mentor = "Rosmerta";
+    var rdteacher = "ed";
+    var bacteacher = "hugo";
+    var javateacher = "joey";
 
- 	var housenumber = 43;
- 	var mobile = +3164413658;
- 	var age = 17;
- 	var dogsageMonths = "4";
- 	var sisterage = "19";
+    var housenumber = 43;
+    var mobile = +3164413658;
+    var age = 17;
+    var dogsageMonths = "4";
+    var sisterage = "19";
 
- 	var hungry = true;
- 	var tired = true;
- 	var wantToGoHome = true;
- 	var wantFood = true;
- 	var wantPizza = true;
+    var hungry = true;
+    var tired = true;
+    var wantToGoHome = true;
+    var wantFood = true;
+    var wantPizza = true;
 
 /**
  * Opdracht 2: Arrays
@@ -61,11 +62,11 @@
   var cars = ['Volvo', 'Renault', 'Ferrari'];
 console.log(cars.length);
 
-	var animal = ['Cat', 'Dog', 'Elephant', 'Tiger', 'Mouse', 'Bird'];
-	console.log(animal.length);
+    var animal = ['Cat', 'Dog', 'Elephant', 'Tiger', 'Mouse', 'Bird'];
+    console.log(animal.length);
 
-	var ducks  = ['kwik', 'kwek', 'kwak'];
-	console.log(ducks.length);
+    var ducks  = ['kwik', 'kwek', 'kwak'];
+    console.log(ducks.length);
 
 /**
  * Opdracht 3: Arrays push
@@ -262,7 +263,7 @@ console.log('Waarom heet JavaScript een prototype based language?', 'elke functi
  */
 
  Array.prototype.empty = function() {
- 	console.log(this.length);
+    console.log(this.length);
     this.splice(0,this.length);
     return this;
 };
@@ -286,19 +287,20 @@ console.log(emptyBlaa);
  * Maak 2 arrays aan en laat zien dat je code werkt
  */
 
-  Array.prototype.every = function() {
- 	alert(this);
- 	return this;
-};
- var fruit = ["banaan", "aardbei"];
- var alertFruit = fruit.every();
+//   Array.prototype.every = function() {
+//     alert(this);
+//     return this;
+// };
+//  var fruit = ["banaan", "aardbei"];
+//  // var alertFruit = fruit.every();
 
 
 
-  Array.prototype.pop = function() {
- 	alert("kipsateé");
- 	return this;
-};
+//   Array.prototype.pop = function() {
+//     // alert("kipsateé");
+//     return this;
+// };
 
-var cop = ["pizza","kaas","pasta"];
-var popcop = cop.pop();
+// var cop = ["pizza","kaas","pasta"];
+// var popcop = cop.pop();
+

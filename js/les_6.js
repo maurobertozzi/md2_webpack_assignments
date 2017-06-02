@@ -7,6 +7,9 @@
  * Maak een object aan en check via existy() of hij bestaat
  * Maak een variabele aan maar geef hem nog geen vulling. Console.log() wat existy() teruggeeft
  */
+ import {existy} from "utils/conditions.utils.js";
+ let naam = "harry";
+ console.log(existy(naam));
 
 /**
  * Opdracht 2: exports
@@ -17,6 +20,8 @@
  * met random getallen. getRandom(from, to)
  * importeer je bestand hier en voer je functie uit
  */
+ import {randomNumber} from "utils/math.utils.js";
+ console.log(randomNumber(1,5));
 
 /**
  * Opdracht 3: Analyseer de Student Class
@@ -24,15 +29,27 @@
  * Importeer de Class en maak 3 studenten aan
  * Beantwoord de volgende vragen
  */
-console.log('Wat is de prototype chain van een student?',
-            'jouw antwoord');
+ import Student from "entities/student.js";
+ const newStudent = new Student("mauro","bertozzi",17);
+ console.log(newStudent);
+
+console.log('constructor getFullName  proto');
 
 console.log('Kan je na het aanmaken van een student nog bij zijn leeftijd?',
-            'jouw antwoord');
+            'ja');
 
 /**
  * Opdracht 4: Student Class
- *
+ */
+ const student1 = new Student("kees","herman",34);
+ const student2 = new Student("harry","pizza",76);
+ const student3 = new Student("freek","kaas",46);
+
+console.log(student1.getFullName());
+console.log(student2.getFullName());
+console.log(student3.getFullName());
+
+ /*
  * Console.log() de fullNames van je 3 aangemaakte studenten
  */
 
